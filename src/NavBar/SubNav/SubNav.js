@@ -13,10 +13,6 @@ export function SubNav() {
                     <span className="icon"><i className="fas fa-pen"/></span>
                     <span>Write a Review</span>
                 </button>
-                <button className="button">
-                    <span className="icon"><i className="fas fa-hotel"/></span>
-                    <span>For Businesses</span>
-                </button>
             </div>
         </div>
     );
