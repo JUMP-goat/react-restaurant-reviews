@@ -14,7 +14,7 @@ export function Footer(props) {
             <p>
                 <strong> Backend Repo: </strong><a href="https://github.com/JUMP-goat/JUMP-Final-Project">Backend Repository</a> ||
                 <strong> Frontend Repo: </strong><a href="https://github.com/JUMP-goat/react-restaurant-reviews">Frontend Repository</a> ||
-                <strong> Technologies: </strong>Java, JavaScript, SQL, Spring, React, AWS, Bluma
+                <strong> Technologies: </strong>Java, JavaScript, SQL, Spring, React, AWS, Bulma
             </p>
         </div>
         </footer>
