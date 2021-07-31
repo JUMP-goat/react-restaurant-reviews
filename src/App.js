@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import { LandingPage } from "./LandingPage/LandingPage";
 import { Search } from "./Search/Search";
 import { Footer } from "./Footer/Footer";
