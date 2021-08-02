@@ -3,13 +3,13 @@ import styles from './SearchBar.module.css';
 
 export function SearchBar(props) {
     const [term, setTerm] = useState(props.term || '');
-    const [location, setLocation] = useState(props.location || '');
+    // const [location, setLocation] = useState(props.location || '');
 
     function submit(e) {
         if(typeof props.search === 'function') {
-            props.search(term, location);
+            props.search(term);
         }
-        console.log(term, location);
+        console.log(term);
         e.preventDefault();
     }
 
@@ -28,7 +28,7 @@ export function SearchBar(props) {
                            placeholder="burgers, barbers, spas, handymen"
                     />
                 </p>
-                <div className="control">
+                {/* <div className="control">
                     <div className={`button is-static ${sizeClass}`}>NEAR</div>
                 </div>
                 <p className="control">
@@ -37,7 +37,7 @@ export function SearchBar(props) {
                            type="text"
                            value={location}
                            placeholder="Where"/>
-                </p>
+                </p> */}
                 <div className={`button ${sizeClass} ${styles['search-button']}`} onClick={submit}>
                     <span className={`icon is-small ${styles['search-icon']}`}><i className="fas fa-search"></i></span>
                 </div>

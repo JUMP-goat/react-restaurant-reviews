@@ -6,7 +6,7 @@ function PostsWithFetch() {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const response = await fetch('http://ec2-54-224-64-102.compute-1.amazonaws.com:8080/api/users:8080/api/users:8080/api/users');
+      const response = await fetch('http://ec2-52-90-183-165.compute-1.amazonaws.com:8080/api/restaurants');
       // const response = await fetch('http://localhost:8080/api/users');
       const postsData = await response.json();
       console.log(postsData);

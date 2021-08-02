@@ -9,11 +9,13 @@ import useReactRouter from 'use-react-router';
 export function LandingPage() {
   const { history } = useReactRouter();
 
-  function search(term, location) {
+  // function search(term, location) {
+  function search(term) {
     const urlEncodedTerm = encodeURI(term);
-    const urlEncodedLocation = encodeURI(location);
+    // const urlEncodedLocation = encodeURI(location);
     history.push(
-      `/search?find_desc=${urlEncodedTerm}&find_loc=${urlEncodedLocation}`
+      // `/search?find_desc=${urlEncodedTerm}&find_loc=${urlEncodedLocation}`
+      `/search?find_desc${urlEncodedTerm}`
     );
   }
 
